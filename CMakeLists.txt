@@ -1,13 +1,25 @@
-cmake_minimum_required(VERSION 3.0.0)
-project(Mylife VERSION 0.1.0)
-set(CMAKE_CXX_FLAGS_DEBUG_INIT "-Wall")
+
+cmake_minimum_required(VERSION 3.5)
+
+project (Mylife)
+
+add_library(sharedData SHARED 
+    shared/sharedlib.cpp
+)
+
+add_library(hello_library STATIC 
+    src/source.cpp
+)
+
+set(SOURCES
+    src/main.cpp
+)
+
+add_executable(Mylife ${SOURCES})
 
 
-include(CTest)
-enable_testing()
+target_include_directories(Mylife PRIVATE ${PROJECT_SOURCE_DIR}/include)
 
-add_executable(Mylife main.cpp)
+install(DIRECTORY ${PROJECT_SOURCE_DIR}/include/ DESTINATION include)
 
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-include(CPack)
+install (TARGETS Mylife DESTINATION bin)
