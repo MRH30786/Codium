@@ -17,6 +17,8 @@ int main(int, char**) {
 
     sharedData data;
     data.init();
+    
+    std::cout << what9plus10() << std::endl;
 
     delete node;
 }
