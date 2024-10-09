@@ -1,9 +1,0 @@
-/workspaces/Codium/CMakeFiles/install/strip.dir
-/workspaces/Codium/CMakeFiles/install/local.dir
-/workspaces/Codium/CMakeFiles/install.dir
-/workspaces/Codium/CMakeFiles/list_install_components.dir
-/workspaces/Codium/CMakeFiles/rebuild_cache.dir
-/workspaces/Codium/CMakeFiles/edit_cache.dir
-/workspaces/Codium/CMakeFiles/Mylife.dir
-/workspaces/Codium/CMakeFiles/hello_library.dir
-/workspaces/Codium/CMakeFiles/sharedData.dir
