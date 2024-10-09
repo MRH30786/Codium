@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/Mylife.dir/workspaces/Codium/src/main.cpp.o  -o Mylife 
